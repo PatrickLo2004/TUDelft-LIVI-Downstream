@@ -4,7 +4,8 @@ Automated downstream analysis pipeline for correlating LIVI donor latent factors
 ---
 
 ## Project Goal
-The goal of this project is to bridge the gap between the latent representation of gene expression in single cells, produced by deep-learning models, and clinically valuable insights. By analyzing the latent space of the LIVI Variational Auto Encoder (VAE), the aim is to identify the driving genes behind clinical heterogeneity within RA patients.
+The goal of this project is to bridge the gap between the latent representation of gene expression in single cells, produced by deep-learning models, and clinically valuable insights. By analyzing the latent space of the LIVI Variational Auto Encoder (VAE), the aim is to identify the driving genes behind clinical heterogeneity within RA patients.\
+\
 Specifically this project is meant to aid research in answering the following research questions: To what extent do RNA-derived LIVI
 latent factors capture clinically relevant RA inflammatory subtypes (heterogeneity) and can they
 be used to identify druggable pathways? To do so, the main question can be divided in three subquestions:
