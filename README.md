@@ -3,7 +3,7 @@ Automated downstream analysis pipeline for correlating LIVI donor latent factors
 
 ---
 
-## 🎯 Project Goal
+## Project Goal
 The goal of this project is to bridge the gap between the latent representation of gene expression in single cells, produced by deep-learning models, and clinically valuable insights. By analyzing the latent space of the LIVI Variational Auto Encoder (VAE), the aim is to identify the driving genes behind clinical heterogeneity within RA patients.
 Specifically this project is meant to aid research in answering the following research questions: To what extent do RNA-derived LIVI
 latent factors capture clinically relevant RA inflammatory subtypes (heterogeneity) and can they
@@ -17,7 +17,7 @@ structure of the predicted CTAPs?
 
 ---
 
-## 🔨 Implementation Roadmap
+## Implementation Roadmap
 
 ### 1. Find correlations between latent factors and CTAPs
 - [ ] **Integrate Data**: Merge donor embeddings ('D') with clinical metadata (from Zhang et al.).
@@ -32,7 +32,7 @@ structure of the predicted CTAPs?
 
 ---
 
-## 🖥️ Tech Stack
+## Tech Stack
 - **Languages:** Python 3.13.12
 - **Libraries:** pandas, scanpy, scipy, statsmodels, gseapy **(most likely)**
 - **APIs:** Open Targets Platform (GraphQL) **(most likely)**
@@ -40,5 +40,5 @@ structure of the predicted CTAPs?
 
   ---
   
-## 🎓 Background & Context
+## Background & Context
 This project is part of a Bachelor of Science Thesis at **Delft University of Technology**. It uses the LIVI model, a Variational Auto Encoder (VAE) originally designed to identify trans-eqtl effects within donors using the OneK1K dataset.
