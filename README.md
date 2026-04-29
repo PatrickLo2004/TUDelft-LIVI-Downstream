@@ -27,7 +27,7 @@ structure of the predicted CTAPs?
 
 ### 2. Map significant factors to biological pathways
 - [ ] **Decode Significant Factors**: Extract gene weights from linear decoder ('W_DxC') using a $100 \times \text{IQR}$ threshold.
-- [ ] **Pathological Validation**: Use GSEA (using gseapy library) to find existing biological pathways corresponding to the extracted genes.
+- [ ] **Pathological Validation**: Perform GSEA (using gseapy library) to find existing biological pathways corresponding to the extracted genes.
 - [ ] **Drug Discovery**: Automatically query pharmaceutical database. **(TBD) but probably Open Targets GraphQL API** to identify potential drugs matching the found pathways.
 
 ---
