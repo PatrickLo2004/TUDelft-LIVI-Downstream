@@ -21,14 +21,14 @@ structure of the predicted CTAPs?
 
 ### 1. Find correlations between latent factors and CTAPs
 - [ ] **Integrate Data**: Merge donor embeddings ('D') with clinical metadata (from Zhang et al.).
-- [ ] **Distribution validation**: Run **(TBD) but probably Shapiro-Wilk \ Levene ** to identify CTAP-specific latent factors.
-- [ ] **Variance Analysis**: Run **(TBD) but probably ANOVA \ Kruskal-Wallis ** to identify CTAP-specific latent factors.
-- [ ] **P-value Correction**: Run **(TBD) but probably Tukey's HSD \ Dunn's** corrections to ensure valid p-values.
+- [ ] **Distribution validation**: Run statistical test **(TBD, but probably Shapiro-Wilk or Levene)** to identify CTAP-specific latent factors.
+- [ ] **Variance Analysis**: Run statistical test **(TBD, but probably ANOVA or Kruskal-Wallis)** to identify CTAP-specific latent factors.
+- [ ] **P-value Correction**: Run correction test **(TBD, but probably Tukey's HSD or Dunn's)** to ensure valid p-values.
 
 ### 2. Map significant factors to biological pathways
 - [ ] **Decode Significant Factors**: Extract gene weights from linear decoder ('W_DxC') using a $100 \times \text{IQR}$ threshold.
 - [ ] **Pathological Validation**: Perform GSEA (using gseapy library) to find existing biological pathways corresponding to the extracted genes.
-- [ ] **Drug Discovery**: Automatically query pharmaceutical database. **(TBD) but probably Open Targets GraphQL API** to identify potential drugs matching the found pathways.
+- [ ] **Drug Discovery**: Automatically query pharmaceutical database **(TBD, but probably Open Targets GraphQL API)** to identify potential drugs matching the found pathways.
 
 ---
 
