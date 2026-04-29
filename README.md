@@ -21,20 +21,21 @@ structure of the predicted CTAPs?
 
 ### 1. Find correlations between latent factors and CTAPs
 - [ ] **Integrate Data**: Merge donor embeddings ('D') with clinical metadata (from Zhang et al.).
-- [ ] **Variance Analysis**: Run **(TBD)** to identify CTAP-specific latent factors.
-- [ ] **P-value Correction**: Run **(TBD)** corrections to ensure valid p-values.
+- [ ] **Distribution validation**: Run **(TBD) but probably Shapiro-Wilk \ Levene ** to identify CTAP-specific latent factors.
+- [ ] **Variance Analysis**: Run **(TBD) but probably ANOVA \ Kruskal-Wallis ** to identify CTAP-specific latent factors.
+- [ ] **P-value Correction**: Run **(TBD) but probably Tukey's HSD \ Dunn's** corrections to ensure valid p-values.
 
 ### 2. Map significant factors to biological pathways
 - [ ] **Decode Significant Factors**: Extract gene weights from linear decoder ('W_DxC') using a $100 \times \text{IQR}$ threshold.
-- [ ] **Pathological Validation**: Use GSEA to find existing biological pathways corresponding to the extracted genes.
-- [ ] **Drug Discovery**: Automatically query Open Targets GraphQL API to identify potential drugs matching the found pathways.
+- [ ] **Pathological Validation**: Use GSEA (using gseapy library) to find existing biological pathways corresponding to the extracted genes.
+- [ ] **Drug Discovery**: Automatically query pharmaceutical database. **(TBD) but probably Open Targets GraphQL API** to identify potential drugs matching the found pathways.
 
 ---
 
 ## 🖥️ Tech Stack
 - **Languages:** Python 3.13.12
-- **Libraries:** pandas, scanpy, scipy, statsmodels, gseapy
-- **APIs:** Open Targets Platform (GraphQL)
+- **Libraries:** pandas, scanpy, scipy, statsmodels, gseapy **(most likely)**
+- **APIs:** Open Targets Platform (GraphQL) **(most likely)**
 - **Environment:** Delft AI Cluster (DAIC)
 
   ---
